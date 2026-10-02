@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="../../css/form_style/style.css">
+
+
+    <title>Payment</title>
+
+</head>
+<body>
+    
+    <header class="header">
+        <h1 class="header_title">Pagamento</h1>
+    </header>
+    
+    <main class="main">
+        <form action="#" method="post" class="form" autocomplete="off">
+            <fieldset class="choice_product">
+                <legend>Produto</legend>
+                <label for="products">
+                    Escolha o produto
+                    <select name="products" id="products" required>
+                        <option value="">Selecione um produto</option>
+                        <option value="kz as24 pro">Kz As24 Pro</option>
+                        <option value="fender mustang v2">Fender Mustang v2</option>
+                        <option value="edifier mr5">Edifier MR5</option>
+                        <option value="focusrtie scarlett">Focusrite Scarlett</option>
+                    </select>
+                </label>
+
+                <label for="quantity">
+                    Quantidade
+                    <input type="number" name="quantity" id="quantity" min="1" max="10" required>
+                </label>
+            </fieldset>
+
+            <fieldset class="data_user">
+                <legend>Dados do cliente</legend>
+                <label for="complete_name">
+                    Nome completo: 
+                    <input type="text" name="complete_name" id="complete_name" required>
+                </label>
+
+                <label for="email">
+                    E-mail: 
+                    <input type="email" name="email" id="email" required>
+                </label>
+
+                <label for="cpf">
+                    CPF: 
+                    <input type="text" name="cpf" id="cpf" inputmode="numeric" required>
+                </label>
+
+                <label for="telephone">
+                    Telefone: 
+                    <input type="tel" name="telephone" id="telephone" required>
+                </label>
+            </fieldset>
+
+            <fieldset class="address">
+                <legend>Endereço de entrega</legend>
+                <label for="cep">
+                    CEP
+                    <input type="text" name="cep" id="cep" inputmode="numeric" required>
+                </label>
+                
+                <label for="numero_casa">
+                    Número
+                    <input type="number" name="numero_casa" id="numero_casa" required>
+                </label>
+                
+                <label for="endereco">
+                    Endereço
+                    <input type="text" name="endereco" id="endereco" required>
+                </label>
+                
+                <label for="complemento">
+                    Complemento
+                    <input type="text" name="complemento" id="complemento">
+                </label>
+                
+                <label for="cidade">
+                    Cidade
+                    <input type="text" name="cidade" id="cidade" required>
+                </label>
+                
+                <label for="bairro">
+                    Bairro
+                    <input type="text" name="bairro" id="bairro" required>
+                </label>
+                
+                <label for="estado">
+                    Estado
+                    <select name="estado" id="estado" required>
+                        <option value="">Selecione um estado</option>
+                        <option value="BA">Bahia</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="PR">Paraná</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="CE">Ceará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="PA">Pará</option>
+                        <option value="AM">Amazonas</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <fieldset class="payment">
+                <legend>Forma de pagamento</legend>
+                <div class="payment_options">
+                    <label for="credito">
+                        <input type="radio" name="payment" id="credito" value="credito">
+                        Cartão de crédito
+                    </label>
+
+                    <label for="debito">
+                        <input type="radio" name="payment" id="debito" value="debito">
+                        Cartão de débito
+                    </label>
+
+                    <label for="pix">
+                        <input type="radio" name="payment" id="pix" value="pix">
+                        Pix
+                    </label>
+
+                    <label for="boleto">
+                        <input type="radio" name="payment" id="boleto" value="boleto"> 
+                        Boleto
+                    </label>
+                </div> 
+
+                <label for="nome_cartao">Nome no cartão</label> 
+                <input type="text" name="nome_cartao" id="nome_cartao" required>
+
+                <label for="numero_cartao">Número do cartão</label>
+                <input type="text" name="numero_cartao" id="numero_cartao" inputmode="numeric" required>
+
+                <label for="codigo_seguranca">CVV</label> 
+                <input type="text" name="codigo_seguranca" id="codigo_seguranca" inputmode="numeric" required>
+
+                <label for="data">Data</label> 
+                <input type="date" name="data" id="data" required>
+            </fieldset>
+
+
+            <fieldset class="observations">
+                <legend>Observações</legend>
+                <label for="address_instructions">
+                    Instruções de entrega:
+                    <textarea name="address_instructions" id="address_instructions"></textarea>
+                </label>
+            </fieldset>
+
+            <div class="buttons">
+                <a href="#" class="link finalizar">Finalizar compra</a>
+                <a href="../../index.html" class="link home">Voltar para a loja</a>
+            </div>
+
+        </form>
+    </main>
+
+</body>
+</html>
